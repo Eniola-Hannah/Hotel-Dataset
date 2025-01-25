@@ -54,3 +54,7 @@ SELECT Hotel_Name, `Booking_Price(SGD)` FROM hotel_dataset;
 -- Fetch all records where Gender is "Female" 
 SELECT * FROM hotel_dataset
 WHERE Gender = "Female";
+
+-- List all bookings with Hotel_Rating greater than 4
+SELECT Booking_id, Booking_Date, `Booking_Price(SGD)`, Hotel_Rating FROM hotel_dataset
+WHERE Hotel_Rating > 4.0;
