@@ -69,3 +69,8 @@ SELECT Origin_Country FROM hotel_dataset;
 -- Find the BookingID, Customer_ID, and Hotel_Name where Discount is exactly 20%.
 SELECT  Booking_id, Customer_id, Hotel_Name, Discount FROM hotel_dataset
 WHERE Discount = "20%";
+
+-- USING 'LIKE' OPERATOR 
+-- List all customers whose Hotel_Name starts with "The" 
+SELECT Customer_id, Hotel_Name FROM hotel_dataset
+WHERE Hotel_Name LIKE "The%";
