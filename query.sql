@@ -47,3 +47,6 @@ RENAME COLUMN `Booking Price[SGD]` TO `Booking_Price(SGD)`;
 -- BASIC QUERIES
 -- Retrieve all columns from the dataset. 
 SELECT * FROM hotel_dataset;
+
+-- Select only the Hotel_Name and Booking_Price columns.
+SELECT Hotel_Name, `Booking_Price(SGD)` FROM hotel_dataset;
