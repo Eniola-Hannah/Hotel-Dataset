@@ -104,3 +104,6 @@ WHERE `Booking_Price(SGD)` BETWEEN 100 and 500;
 SELECT Hotel_Name, Hotel_Rating FROM hotel_dataset
 WHERE Hotel_Rating BETWEEN 3.0 AND 5.0;
 
+-- Fetch bookings where Age is between 18 and 25. 
+SELECT Booking_id, Age FROM hotel_dataset
+WHERE Age BETWEEN 18 AND 25;
