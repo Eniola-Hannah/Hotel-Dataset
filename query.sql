@@ -58,3 +58,7 @@ WHERE Gender = "Female";
 -- List all bookings with Hotel_Rating greater than 4
 SELECT Booking_id, Booking_Date, `Booking_Price(SGD)`, Hotel_Rating FROM hotel_dataset
 WHERE Hotel_Rating > 4.0;
+
+-- Display customers aged between 25 and 40.
+SELECT Customer_id, Age FROM hotel_dataset
+WHERE Age >=25 AND Age <=40;
