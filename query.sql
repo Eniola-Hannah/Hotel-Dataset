@@ -129,3 +129,10 @@ WHERE Hotel_Rating IN (3.3, 4.4, 4.5);
 -- List customers with Customer_ID in ("SG00002", "KH00003", "MY00001"). 
 SELECT Customer_id FROM hotel_dataset
 WHERE Customer_id IN ("SG00002", "KH00003", "MY00001");
+
+
+
+-- USING 'WHERE' CLAUSE
+-- Displays all bookings where Booking_Price is greater than $300.
+SELECT Booking_id, `Booking_Price(SGD)` FROM hotel_dataset
+WHERE `Booking_Price(SGD)` > 300;
