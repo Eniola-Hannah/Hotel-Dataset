@@ -50,3 +50,7 @@ SELECT * FROM hotel_dataset;
 
 -- Select only the Hotel_Name and Booking_Price columns.
 SELECT Hotel_Name, `Booking_Price(SGD)` FROM hotel_dataset;
+
+-- Fetch all records where Gender is "Female" 
+SELECT * FROM hotel_dataset
+WHERE Gender = "Female";
