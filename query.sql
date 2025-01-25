@@ -125,3 +125,7 @@ WHERE Origin_Country IN ("Thailand", "Singapore", "Malaysia");
 -- Retrieve hotels with Hotel_Rating of 3.3, 4.4, or 4.5
 SELECT Hotel_Name, Hotel_Rating FROM hotel_dataset
 WHERE Hotel_Rating IN (3.3, 4.4, 4.5);
+
+-- List customers with Customer_ID in ("SG00002", "KH00003", "MY00001"). 
+SELECT Customer_id FROM hotel_dataset
+WHERE Customer_id IN ("SG00002", "KH00003", "MY00001");
