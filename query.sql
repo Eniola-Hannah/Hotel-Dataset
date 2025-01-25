@@ -115,3 +115,13 @@ WHERE Discount BETWEEN "10%" AND "30%";
 -- Display bookings made on dates between 1/26/2010 and 2/6/2010.
 SELECT Booking_id, Booking_Date FROM hotel_dataset
 WHERE Booking_Date BETWEEN "2010-01-26" AND "2010-02-06";
+
+
+-- USING IN OPERATOR
+--  Find bookings where the Origin_Country is either "Thailand", "Singapore", or "Malaysia" 
+SELECT Booking_id, Origin_Country FROM hotel_dataset
+WHERE Origin_Country IN ("Thailand", "Singapore", "Malaysia");
+
+-- Retrieve hotels with Hotel_Rating of 3.3, 4.4, or 4.5
+SELECT Hotel_Name, Hotel_Rating FROM hotel_dataset
+WHERE Hotel_Rating IN (3.3, 4.4, 4.5);
