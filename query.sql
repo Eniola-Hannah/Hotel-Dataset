@@ -107,3 +107,11 @@ WHERE Hotel_Rating BETWEEN 3.0 AND 5.0;
 -- Fetch bookings where Age is between 18 and 25. 
 SELECT Booking_id, Age FROM hotel_dataset
 WHERE Age BETWEEN 18 AND 25;
+
+-- List all discounts between 10% and 30%
+SELECT Discount FROM hotel_dataset
+WHERE Discount BETWEEN "10%" AND "30%";
+
+-- Display bookings made on dates between 1/26/2010 and 2/6/2010.
+SELECT Booking_id, Booking_Date FROM hotel_dataset
+WHERE Booking_Date BETWEEN "2010-01-26" AND "2010-02-06";
