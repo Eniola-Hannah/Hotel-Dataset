@@ -62,3 +62,6 @@ WHERE Hotel_Rating > 4.0;
 -- Display customers aged between 25 and 40.
 SELECT Customer_id, Age FROM hotel_dataset
 WHERE Age >=25 AND Age <=40;
+
+-- Fetch the unique Origin_Country values from the dataset.
+SELECT Origin_Country FROM hotel_dataset;
