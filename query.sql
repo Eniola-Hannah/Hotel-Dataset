@@ -74,3 +74,7 @@ WHERE Discount = "20%";
 -- List all customers whose Hotel_Name starts with "The" 
 SELECT Customer_id, Hotel_Name FROM hotel_dataset
 WHERE Hotel_Name LIKE "The%";
+
+-- Retrieve bookings where the Origin_Country contains the substring "bod" 
+SELECT Booking_id, Origin_Country FROM hotel_dataset
+WHERE Origin_Country LIKE "%bod%";
