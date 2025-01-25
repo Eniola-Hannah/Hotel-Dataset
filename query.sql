@@ -93,3 +93,9 @@ WHERE Hotel_Name LIKE "E%Ion";
 
 SELECT Booking_id, Hotel_Name FROM hotel_dataset
 WHERE Hotel_Name LIKE "E%" AND Hotel_Name LIKE "%Ion";
+
+
+-- USING BETWEEN OPERATOR
+-- Retrieve bookings where Booking_Price is between $100 and $500
+SELECT Booking_id, `Booking_Price(SGD)` FROM hotel_dataset
+WHERE `Booking_Price(SGD)` BETWEEN 100 and 500;
