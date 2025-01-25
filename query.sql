@@ -78,3 +78,7 @@ WHERE Hotel_Name LIKE "The%";
 -- Retrieve bookings where the Origin_Country contains the substring "bod" 
 SELECT Booking_id, Origin_Country FROM hotel_dataset
 WHERE Origin_Country LIKE "%bod%";
+
+-- Find customers whose Customer_ID ends with "5." 
+SELECT Customer_id FROM hotel_dataset
+WHERE Customer_id LIKE "%5";
