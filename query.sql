@@ -86,3 +86,10 @@ WHERE Customer_id LIKE "%5";
 -- Display hotels with names containing the word "The"
 SELECT Hotel_Name FROM hotel_dataset
 WHERE Hotel_Name LIKE "%The%";
+
+-- List all bookings where the Hotel_Name starts with "E" and ends with "Ion" 
+SELECT Booking_id, Hotel_Name FROM hotel_dataset
+WHERE Hotel_Name LIKE "E%Ion";
+
+SELECT Booking_id, Hotel_Name FROM hotel_dataset
+WHERE Hotel_Name LIKE "E%" AND Hotel_Name LIKE "%Ion";
