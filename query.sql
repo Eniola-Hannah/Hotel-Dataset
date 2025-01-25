@@ -82,3 +82,7 @@ WHERE Origin_Country LIKE "%bod%";
 -- Find customers whose Customer_ID ends with "5." 
 SELECT Customer_id FROM hotel_dataset
 WHERE Customer_id LIKE "%5";
+
+-- Display hotels with names containing the word "The"
+SELECT Hotel_Name FROM hotel_dataset
+WHERE Hotel_Name LIKE "%The%";
