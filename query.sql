@@ -39,3 +39,11 @@ RENAME COLUMN `Hotel Rating` TO Hotel_Rating;
 
 ALTER TABLE hotel_dataset
 RENAME COLUMN `Booking Price[SGD]` TO `Booking_Price(SGD)`;
+
+-- Ensure that the data types are in the correct type. 
+-- All cloumns are already in their correct type.
+
+
+-- BASIC QUERIES
+-- Retrieve all columns from the dataset. 
+SELECT * FROM hotel_dataset;
