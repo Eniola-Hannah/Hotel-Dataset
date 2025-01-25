@@ -65,3 +65,7 @@ WHERE Age >=25 AND Age <=40;
 
 -- Fetch the unique Origin_Country values from the dataset.
 SELECT Origin_Country FROM hotel_dataset;
+
+-- Find the BookingID, Customer_ID, and Hotel_Name where Discount is exactly 20%.
+SELECT  Booking_id, Customer_id, Hotel_Name, Discount FROM hotel_dataset
+WHERE Discount = "20%";
