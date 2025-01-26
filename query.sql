@@ -140,3 +140,15 @@ WHERE `Booking_Price(SGD)` > 300;
 -- Fetch bookings where Discount is less than 10%. 
 SELECT Booking_id, Discount FROM hotel_dataset
 WHERE Discount < "10%";
+
+-- Retrieve records where Gender is "Male" and Hotel_Rating is greater than 4.
+SELECT * FROM hotel_dataset
+WHERE Gender = "Male" AND Hotel_Rating > 4;
+
+-- Find customers aged 30 or older who booked a hotel rated greater than 4.5.
+ SELECT Customer_id, Age, Hotel_Rating FROM hotel_dataset
+WHERE Age >= 30 AND Hotel_Rating > 4.5;
+
+-- Display all bookings made for hotels in "Thailand" 
+SELECT Booking_id, Origin_Country FROM hotel_dataset
+WHERE Origin_Country = "Thailand";
