@@ -160,3 +160,10 @@ WHERE Origin_Country = "Thailand";
 -- USING SQL OPERATOR
 -- Calculate the final price after the discount for each booking (Booking_Price - (Discount / 100 * Booking_Price)). 
 SELECT `Booking_Price(SGD)`, Discount, (`Booking_Price(SGD)` - (Discount / 100 * `Booking_Price(SGD)`)) AS Final_Price FROM hotel_dataset;
+
+-- Find all bookings where Booking_Price is not equal to $300. 
+SELECT Booking_id, `Booking_Price(SGD)` FROM hotel_dataset
+WHERE NOT `Booking_Price(SGD)` = 300;
+
+SELECT Booking_id, `Booking_Price(SGD)` FROM hotel_dataset
+WHERE `Booking_Price(SGD)` != 300;
