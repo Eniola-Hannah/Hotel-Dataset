@@ -133,6 +133,10 @@ WHERE Customer_id IN ("SG00002", "KH00003", "MY00001");
 
 
 -- USING 'WHERE' CLAUSE
--- Displays all bookings where Booking_Price is greater than $300.
+-- Display all bookings where Booking_Price is greater than $300.
 SELECT Booking_id, `Booking_Price(SGD)` FROM hotel_dataset
 WHERE `Booking_Price(SGD)` > 300;
+
+-- Fetch bookings where Discount is less than 10%. 
+SELECT Booking_id, Discount FROM hotel_dataset
+WHERE Discount < "10%";
