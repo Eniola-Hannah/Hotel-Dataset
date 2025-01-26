@@ -19,7 +19,9 @@ ALTER TABLE hotel_dataset
 RENAME COLUMN `Date of Booking` TO Booking_Date;
 
 -- Correct invalid entries in Age, Hotel_Rating, and Discount.
--- No Invalid entries!
+UPDATE hotel_dataset
+SET Discount = REPLACE(Discount, "%", "");
+SELECT Discount FROM hotel_dataset;
 
 -- Ensure that the column headers are in the right format. 
 ALTER TABLE hotel_dataset
