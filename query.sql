@@ -167,3 +167,7 @@ WHERE NOT `Booking_Price(SGD)` = 300;
 
 SELECT Booking_id, `Booking_Price(SGD)` FROM hotel_dataset
 WHERE `Booking_Price(SGD)` != 300;
+
+-- Retrieve bookings where Age is less than 21 or greater than 60
+SELECT Booking_id, Age FROM hotel_dataset
+WHERE Age < 21 OR Age > 60;
