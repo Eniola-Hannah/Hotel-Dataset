@@ -154,3 +154,9 @@ WHERE Age >= 30 AND Hotel_Rating > 4.5;
 -- Display all bookings made for hotels in "Thailand" 
 SELECT Booking_id, Origin_Country FROM hotel_dataset
 WHERE Origin_Country = "Thailand";
+
+
+
+-- USING SQL OPERATOR
+-- Calculate the final price after the discount for each booking (Booking_Price - (Discount / 100 * Booking_Price)). 
+SELECT `Booking_Price(SGD)`, Discount, (`Booking_Price(SGD)` - (Discount / 100 * `Booking_Price(SGD)`)) AS Final_Price FROM hotel_dataset;
