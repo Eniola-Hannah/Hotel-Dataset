@@ -70,7 +70,7 @@ SELECT Origin_Country FROM hotel_dataset;
 
 -- Find the BookingID, Customer_ID, and Hotel_Name where Discount is exactly 20%.
 SELECT  Booking_id, Customer_id, Hotel_Name, Discount FROM hotel_dataset
-WHERE Discount = "20%";
+WHERE Discount = 20;
 
 -- USING 'LIKE' OPERATOR 
 -- List all customers whose Hotel_Name starts with "The" 
@@ -112,7 +112,7 @@ WHERE Age BETWEEN 18 AND 25;
 
 -- List all discounts between 10% and 30%
 SELECT Discount FROM hotel_dataset
-WHERE Discount BETWEEN "10%" AND "30%";
+WHERE Discount BETWEEN 10 AND 30;
 
 -- Display bookings made on dates between 1/26/2010 and 2/6/2010.
 SELECT Booking_id, Booking_Date FROM hotel_dataset
@@ -141,7 +141,7 @@ WHERE `Booking_Price(SGD)` > 300;
 
 -- Fetch bookings where Discount is less than 10%. 
 SELECT Booking_id, Discount FROM hotel_dataset
-WHERE Discount < "10%";
+WHERE Discount < 10;
 
 -- Retrieve records where Gender is "Male" and Hotel_Rating is greater than 4.
 SELECT * FROM hotel_dataset
@@ -175,3 +175,7 @@ WHERE Age < 21 OR Age > 60;
 -- Display records where Hotel_Rating is either 5 or less than 2
 SELECT * FROM hotel_dataset
 WHERE Hotel_Rating = 5 OR Hotel_Rating < 2;
+
+-- List bookings where the Booking_Price is greater than $200 and the Discount is greater than 15%.
+SELECT Booking_id, `Booking_Price(SGD)`, Discount FROM hotel_dataset
+WHERE `Booking_Price(SGD)` > 200 AND Discount > 15;
